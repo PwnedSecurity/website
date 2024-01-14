@@ -1,0 +1,164 @@
+body{
+    font-family: "Montserrat";
+	transform: translateZ(0); /* Trigger hardware acceleration */
+	background-color: #161515;
+	color: green;
+}
+header {
+	text-align: center;
+	font-weight: bold;
+}
+
+.option {
+	text-align: center;
+	margin: auto;
+}
+
+.option a {
+	color: green;
+	font-weight: bold;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    pointer-events: auto;
+    width: 200px;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+	background-color: black;
+}
+
+.dropdown-content a {
+    color: green;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.dropdown-content a:hover {
+	background-color: black;
+}
+.dropdown-content:hover {
+    max-width: 250px; /* Larghezza massima durante il passaggio del mouse sul dropdown */
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.greenButton{
+	max-width: 80px;
+	height: 50px;
+	min-height: 30px;
+	max-height: 50px;
+	font-weight: bold;
+	text-decoration: none;
+	background: #333;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: 3px solid #333;
+	transition: all 0.3s ease-in-out;
+}
+.greenButton:hover{
+	width: 30px;
+	border: 3px solid #2ecc71;
+	color: #2ecc71;
+}
+
+h1, h2, h3 {
+	color: purple;
+}
+
+p {
+	line-height: 1.6;
+	color:green;
+	padding: 20px;
+}
+
+li{
+	color: green;
+	padding: 4px;
+}
+.box {
+    display: flex;
+    justify-content: center;
+}
+.box div{
+	display: inline-table;
+	margin: 10px;
+	border: 2px solid rgb(31, 202, 88);
+	padding: 20px;
+	text-align: center;
+	max-width: 250px;
+}
+.box img{
+	max-width: 100%;
+	height: auto;
+}
+@media only screen and (max-width: 690px) {
+	.option a {
+		color: green;
+		font-weight: bold;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.dropdown {
+		display: inline-block;
+		position: relative;
+	}
+	
+	.dropdown-content {
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		background-color: #333;
+		box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+		pointer-events: auto;
+		width: 100px;
+		transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+	}
+	
+	.dropdown:hover .dropdown-content {
+		opacity: 1;
+		visibility: visible;
+		background-color: black;
+	}
+	
+	.dropdown-content a {
+		color: green;
+		text-decoration: none;
+		display: block;
+		text-align: center;
+	}
+	
+	.dropdown-content a:hover {
+		background-color: black;
+	}
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+}
+
+.hide-scroll {
+	overflow-y: scroll;
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
